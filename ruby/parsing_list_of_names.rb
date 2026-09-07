@@ -1,2 +1,1 @@
-# frozen_string_literal: true
-
+puts File.read('/home/menezes/Área de trabalho/engenharia_software/exercicios_es/parsing_list2/engsoft.txt').scan(/(\d{2}\/\d{7})\s+([A-ZÀ-Ú\s ']+)/).map { |mat, nome| "#{mat}\t#{nome.gsub(/\s+/, ' ').strip}" }
