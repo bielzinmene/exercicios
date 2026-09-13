@@ -13,7 +13,7 @@ bundle install
 `
 
 ### 2. Preparar o banco de dados
-Crie a estrutura das tabelas no banco de dados e popule com os filmes iniciais de teste através do script `db/seeds.rb:
+Crie a estrutura das tabelas no banco de dados e popule com os filmes iniciais de teste através do script `db/seeds.rb`:
 `bash
 bin/rails db:migrate
 bin/rails db:seed
