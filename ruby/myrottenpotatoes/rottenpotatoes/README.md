@@ -1,24 +1,33 @@
-# README
+# Rotten Potatoes 🎬
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é um catálogo de filmes desenvolvido em Ruby on Rails, criado como parte das atividades práticas de Engenharia de Software baseadas no livro *Engineering Software as a Service.
 
-Things you may want to cover:
+## Como executar o projeto localmente
 
-* Ruby version
+Siga os passos abaixo para configurar e rodar a aplicação na sua máquina:
 
-* System dependencies
+### 1. Instalar dependências
+Certifique-se de ter o ambiente Ruby configurado corretamente. O projeto utiliza um `Gemfile` para gerenciar as bibliotecas necessárias. Para instalá-las, execute:
+`bash
+bundle install
+`
 
-* Configuration
+### 2. Preparar o banco de dados
+Crie a estrutura das tabelas no banco de dados e popule com os filmes iniciais de teste através do script `db/seeds.rb:
+`bash
+bin/rails db:migrate
+bin/rails db:seed
+`
 
-* Database creation
+### 3. Executar os testes
+Para garantir que as validações e as regras de negócio estão funcionando sem falhas, rode a suíte de testes automatizados (incluindo testes de comportamento e unitários):
+`bash
+bin/rails test
+`
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 4. Iniciar o servidor local
+Inicie o servidor de desenvolvimento do Rails para interagir com a aplicação:
+`bash
+bin/rails server
+`
+Acesse `http://localhost:3000` no seu navegador para visualizar o catálogo!
