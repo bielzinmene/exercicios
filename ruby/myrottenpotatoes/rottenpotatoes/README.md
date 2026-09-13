@@ -1,6 +1,6 @@
 # Rotten Potatoes 🎬
 
-Este é um catálogo de filmes desenvolvido em Ruby on Rails, criado como parte das atividades práticas de Engenharia de Software baseadas no livro *Engineering Software as a Service.
+Este é um catálogo de filmes desenvolvido em Ruby on Rails, criado como parte das atividades práticas de Engenharia de Software baseadas no livro *Engineering Software as a Service*.
 
 ## Como executar o projeto localmente
 
